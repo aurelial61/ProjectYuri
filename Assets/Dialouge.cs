@@ -5,17 +5,17 @@ using TMPro;
 
 public class Dialouge : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
-    public string[] lines;
-    public float textSpeed;
+    public TextMeshProUGUI textComponent; // calling text component
+    public string[] lines; // array of set of lines
+    public float textSpeed; // how fast the characters set up
 
-    private int index;
+    private int index; // index of scenes
 
-    public bool sceneStop;
+    public bool sceneStop; // when the scene stops
     // Start is called before the first frame update
     void Start()
     {
-        textComponent.text = string.Empty;
+        textComponent.text = string.Empty; // first it's empty
         StartDialouge();
         sceneStop = false;
     }
@@ -25,14 +25,14 @@ public class Dialouge : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(textComponent.text == lines[index])
+            if(textComponent.text == lines[index]) // when the line shows up
             {
-                NextLine();
+                NextLine(); // go to next line
             }
             else
             {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
+                StopAllCoroutines(); // stop courotines
+                textComponent.text = lines[index]; // stay in line
             }
         }
     }
@@ -45,7 +45,7 @@ public class Dialouge : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        foreach(char c in lines[index].ToCharArray())
+        foreach(char c in lines[index].ToCharArray()) // types out each char
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -54,16 +54,16 @@ public class Dialouge : MonoBehaviour
 
     public void NextLine()
     {
-        if(index < lines.Length - 1)
+        if(index < lines.Length - 1) // length of array
         {
-            index++;
+            index++; // go to next line
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
         else
         {
-            gameObject.SetActive(false);
-            sceneStop = true;
+            gameObject.SetActive(false); // all activity is stopped
+            sceneStop = true; // the scene is stopped
         }
     }
 }

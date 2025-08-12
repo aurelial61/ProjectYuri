@@ -493,14 +493,14 @@ MonoBehaviour:
     serializedVersion: 2
     rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 1
-  m_colorMode: 1
+  m_enableVertexGradient: 0
+  m_colorMode: 3
   m_fontColorGradient:
-    topLeft: {r: 0.72327036, g: 0.18422917, b: 0.18422917, a: 1}
-    topRight: {r: 0.6981132, g: 0.45004147, b: 0.45004147, a: 1}
-    bottomLeft: {r: 0.72327036, g: 0.18422917, b: 0.18422917, a: 1}
-    bottomRight: {r: 0.6981132, g: 0.45004147, b: 0.45004147, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 479a66fa4b094512a62b0a8e553ad95a, type: 2}
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
@@ -611,7 +611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.46666667}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.47058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -650,9 +650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1275997213}
   lines:
-  - 'Void Queen: You dare defy me?'
-  - 'Me: You have no control over me.'
-  - 'Void Queen: Fine. Let''s do this the hard way.'
+  - 'Me: Ngl you kinda cute.'
+  - 'Void Queen: We were literally fighting a few seconds ago wut?'
   textSpeed: 0.1
   sceneStop: 0
 --- !u!1001 &59748691821582774
