@@ -14,7 +14,7 @@ public class NoteScript : MonoBehaviour
     public GameObject great;
     public GameObject good;
     public GameObject miss;
-    
+    public KeyCode key;
     void Start()
     {
         
@@ -27,7 +27,7 @@ public class NoteScript : MonoBehaviour
         
         transform.position -= new Vector3(speed, 0, 0) * Time.deltaTime;
         
-        if ((Input.GetKeyDown(KeyCode.Space)))
+        if ((Input.GetKeyDown(key)))
         {
             if ((hitTime - timer <= 0.15f && hitTime - timer > 0.1f) || (hitTime - timer < -0.1f && hitTime - timer >= -0.15f))
             {

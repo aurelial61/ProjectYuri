@@ -7,7 +7,7 @@ public class TraceScript : MonoBehaviour
     // Start is called before the first frame update
     public float speed;
     public GameObject manager;
-    
+    public KeyCode key;
     public float timer;
     public float hitTime;
     public GameObject perfect;
@@ -25,7 +25,7 @@ public class TraceScript : MonoBehaviour
         
         transform.position -= new Vector3(speed, 0, 0) * Time.deltaTime;
         
-        if ((Input.GetKey(KeyCode.Space)))
+        if ((Input.GetKey(key)))
         {
             if ((hitTime - timer >= -0.02f && hitTime - timer <= 0.02f))
             {

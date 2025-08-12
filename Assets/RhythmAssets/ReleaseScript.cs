@@ -7,7 +7,7 @@ public class ReleaseScript : MonoBehaviour
     // Start is called before the first frame update
     public float speed;
     public GameObject manager;
-    
+    public KeyCode key;
     public float timer;
     public float hitTime;
     public GameObject perfect;
@@ -27,7 +27,7 @@ public class ReleaseScript : MonoBehaviour
         
         transform.position -= new Vector3(speed, 0, 0) * Time.deltaTime;
         
-        if ((Input.GetKeyUp(KeyCode.Space)))
+        if ((Input.GetKeyUp(key)))
         {
             if ((hitTime - timer <= 0.15f && hitTime - timer > 0.1f) || (hitTime - timer < -0.1f && hitTime - timer >= -0.15f))
             {

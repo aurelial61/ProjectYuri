@@ -21,6 +21,7 @@ public class HoldScript : MonoBehaviour
     public GameObject good;
     public GameObject miss;
     public GameObject releasePrefab;
+    public KeyCode key;
     
     public bool release;
     void Start()
@@ -31,6 +32,7 @@ public class HoldScript : MonoBehaviour
         thisNote.GetComponent<NoteScript>().speed = speed;
         thisNote.GetComponent<NoteScript>().hitTime = hitTime;
         thisNote.GetComponent<NoteScript>().manager = manager;
+        thisNote.GetComponent<NoteScript>().key = key;
         
     }
 
@@ -45,6 +47,7 @@ public class HoldScript : MonoBehaviour
             traceNote.GetComponent<TraceScript>().speed = speed;
             traceNote.GetComponent<TraceScript>().hitTime = timer + spawnDistance / speed;
             traceNote.GetComponent<TraceScript>().manager = manager;
+            traceNote.GetComponent<TraceScript>().key = key;
             beatTimer = 0;
             
         }
@@ -55,6 +58,7 @@ public class HoldScript : MonoBehaviour
             thisNote.GetComponent<ReleaseScript>().speed = speed;
             thisNote.GetComponent<ReleaseScript>().hitTime = endHitTime;
             thisNote.GetComponent<ReleaseScript>().manager = manager;
+            thisNote.GetComponent<ReleaseScript>().key = key;
             Destroy(gameObject);
         }
 
