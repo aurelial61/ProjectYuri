@@ -17,9 +17,11 @@ public class RhythmScript : MonoBehaviour
     public bool fullCombo;
     public bool allPerfect;
     public GameObject notePrefab;
+    public GameObject holdPrefab;
     public int score;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI comboText;
+    public List<Vector2> holds;
     
 
     void Start()
@@ -59,6 +61,18 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().manager = gameObject;
             notes.RemoveAt(0);
 
+        }
+
+        if (holds.Count > 0 && timer >= (holds[0].x * spb - spawnDistance / speed))
+        {
+            GameObject holdNote = Instantiate(holdPrefab, transform.position + new Vector3(spawnDistance, 0, 0), Quaternion.identity);
+            holdNote.GetComponent<HoldScript>().speed = speed;
+            holdNote.GetComponent<HoldScript>().hitTime = holds[0].x * spb;
+            holdNote.GetComponent<HoldScript>().manager = gameObject;
+            holdNote.GetComponent<HoldScript>().duration = holds[0].y * spb;
+            holdNote.GetComponent<HoldScript>().spb = spb;
+            holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
+            holds.RemoveAt(0);
         }
     }
 
