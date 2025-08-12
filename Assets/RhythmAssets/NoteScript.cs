@@ -14,6 +14,7 @@ public class NoteScript : MonoBehaviour
     public GameObject great;
     public GameObject good;
     public GameObject miss;
+    
     void Start()
     {
         
@@ -32,12 +33,16 @@ public class NoteScript : MonoBehaviour
             {
                 manager.GetComponent<RhythmScript>().score++;
                 manager.GetComponent<RhythmScript>().combo = 0;
+                manager.GetComponent<RhythmScript>().fullCombo = false;
+                manager.GetComponent<RhythmScript>().allPerfect = false;
                 Instantiate(good);
+                
             }
             else if ((hitTime - timer <= 0.10f && hitTime - timer > 0.02f) || (hitTime - timer < -0.02f && hitTime - timer >= -0.1f))
             {
                 manager.GetComponent<RhythmScript>().score += 2;
                 manager.GetComponent<RhythmScript>().combo++;
+                manager.GetComponent<RhythmScript>().allPerfect = false;
                 Instantiate(great);
             }
             else if ((hitTime - timer >= -0.02f && hitTime - timer <= 0.02f))
@@ -50,6 +55,8 @@ public class NoteScript : MonoBehaviour
             {
                 manager.GetComponent<RhythmScript>().score--;
                 manager.GetComponent<RhythmScript>().combo = 0;
+                manager.GetComponent<RhythmScript>().fullCombo = false;
+                manager.GetComponent<RhythmScript>().allPerfect = false;
                 Instantiate(miss);
             }
 
@@ -64,6 +71,8 @@ public class NoteScript : MonoBehaviour
             manager.GetComponent<RhythmScript>().score--;
             manager.GetComponent<RhythmScript>().combo = 0;
             Instantiate(miss);
+            manager.GetComponent<RhythmScript>().fullCombo = false;
+            manager.GetComponent<RhythmScript>().allPerfect = false;
             Destroy(gameObject);
         }
 
