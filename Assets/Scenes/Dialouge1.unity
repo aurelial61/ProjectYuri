@@ -417,7 +417,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794866697}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 601cc5fdfe3ec954cbf401b0202cd4c6, type: 2}
   m_Animations: []
@@ -509,15 +509,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -652,7 +652,7 @@ MonoBehaviour:
   lines:
   - 'Void Queen: You dare defy me?'
   - 'Me: You have no control over me.'
-  - 'Void Queen: Fine, let''s do this the hard way.'
+  - 'Void Queen: Fine. Let''s do this the hard way.'
   textSpeed: 0.1
   sceneStop: 0
 --- !u!1001 &59748691821582774
@@ -721,7 +721,7 @@ PrefabInstance:
       objectReference: {fileID: 794866702}
     - target: {fileID: 6171692413283526519, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
       propertyPath: transitionTime
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7915287503889944975, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
       propertyPath: m_Alpha
