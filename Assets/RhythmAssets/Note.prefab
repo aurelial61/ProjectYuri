@@ -100,8 +100,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  timer: 0
+  manager: {fileID: 0}
   hit: 0
+  timer: 0
+  hitTime: 0
+  perfect: {fileID: 4949134959870363514, guid: e02d0a5c060c2c8478bff4312ec3b5b4, type: 3}
+  great: {fileID: 2256933838544118207, guid: 0acac23fbfcf22f4ba89f5f4b33f3e07, type: 3}
+  good: {fileID: 2174179522653334094, guid: c0498e5c4494ac743b0240af942ced03, type: 3}
+  miss: {fileID: 4592535912717290923, guid: 0885e017373ca9046a81e3b48468d3b5, type: 3}
 --- !u!61 &517473679502501687
 BoxCollider2D:
   m_ObjectHideFlags: 0

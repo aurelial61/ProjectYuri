@@ -13,6 +13,7 @@ public class RhythmScript : MonoBehaviour
     public float spb;
     public List<float> notes;
     public float speed;
+    public int combo;
     
     public GameObject notePrefab;
     public int score;
@@ -29,7 +30,7 @@ public class RhythmScript : MonoBehaviour
     {
         timer += Time.deltaTime;
         //GetComponent<BoxCollider2D>().size = new Vector2(speed / 12f * 2, 10);
-        scoreText.text = "" + score;
+        scoreText.text = "Score: " + score + "     " + "Combo: " + combo;
         if (notes.Count > 0 && timer >= (notes[0] * spb - spawnDistance / speed))
         {
             GameObject thisNote = Instantiate(notePrefab, transform.position + new Vector3(spawnDistance, 0, 0), Quaternion.identity);
