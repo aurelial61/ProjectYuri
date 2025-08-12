@@ -650,7 +650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1275997213}
   lines:
-  - 'Void Queen: You should''ve thought better than to fight me.'
+  - 'Void Queen: Damn you bad at this.'
   textSpeed: 0.1
   sceneStop: 0
 --- !u!1001 &59748691821582774
