@@ -10,11 +10,14 @@ public class Dialouge : MonoBehaviour
     public float textSpeed;
 
     private int index;
+
+    public bool sceneStop;
     // Start is called before the first frame update
     void Start()
     {
         textComponent.text = string.Empty;
         StartDialouge();
+        sceneStop = false;
     }
 
     // Update is called once per frame
@@ -49,7 +52,7 @@ public class Dialouge : MonoBehaviour
         }
     }
 
-    void NextLine()
+    public void NextLine()
     {
         if(index < lines.Length - 1)
         {
@@ -60,6 +63,7 @@ public class Dialouge : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+            sceneStop = true;
         }
     }
 }
