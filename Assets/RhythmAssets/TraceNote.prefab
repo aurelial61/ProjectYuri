@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4091662460215992724}
   - component: {fileID: 1608272639519305099}
   m_Layer: 0
-  m_Name: Note 1
+  m_Name: TraceNote
   m_TagString: Note
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.53, y: -0.78, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.8, z: 1}
+  m_LocalScale: {x: 2, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,8 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   manager: {fileID: 0}
-  hit: 0
   timer: 0
   hitTime: 0
-  perfect: {fileID: 0}
-  miss: {fileID: 0}
+  perfect: {fileID: 4949134959870363514, guid: e02d0a5c060c2c8478bff4312ec3b5b4, type: 3}
+  miss: {fileID: 4592535912717290923, guid: 0885e017373ca9046a81e3b48468d3b5, type: 3}

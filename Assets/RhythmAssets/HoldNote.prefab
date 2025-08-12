@@ -48,13 +48,16 @@ MonoBehaviour:
   duration: 0
   manager: {fileID: 0}
   notePrefab: {fileID: 2465097318971369422, guid: 30d3a0f069894a34298915850bf056ab, type: 3}
-  hit: 0
+  tracePrefab: {fileID: 2465097318971369422, guid: 1fb5e24e6292d47499aba6237c8daab8, type: 3}
   timer: 0
   hitTime: 0
   endHitTime: 0
   spb: 0
   beatTimer: 0
+  spawnDistance: 0
   perfect: {fileID: 4949134959870363514, guid: e02d0a5c060c2c8478bff4312ec3b5b4, type: 3}
   great: {fileID: 2256933838544118207, guid: 0acac23fbfcf22f4ba89f5f4b33f3e07, type: 3}
   good: {fileID: 2174179522653334094, guid: c0498e5c4494ac743b0240af942ced03, type: 3}
   miss: {fileID: 4592535912717290923, guid: 0885e017373ca9046a81e3b48468d3b5, type: 3}
+  releasePrefab: {fileID: 2465097318971369422, guid: f96faaf6e0ffcb54793eee70f42a5b64, type: 3}
+  release: 0

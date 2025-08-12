@@ -168,9 +168,12 @@ MonoBehaviour:
   fullCombo: 0
   allPerfect: 0
   notePrefab: {fileID: 2465097318971369422, guid: 30d3a0f069894a34298915850bf056ab, type: 3}
+  holdPrefab: {fileID: 2465097318971369422, guid: 9b55e6d58f4946345a45f93d65007f59, type: 3}
   score: 0
   scoreText: {fileID: 889078702}
   comboText: {fileID: 1528697373}
+  holds:
+  - {x: 10, y: 5}
 --- !u!61 &92141622
 BoxCollider2D:
   m_ObjectHideFlags: 0
