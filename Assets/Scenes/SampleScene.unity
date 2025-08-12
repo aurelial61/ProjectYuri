@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cea6714d36bf7145b4995445542ff61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
   spawnDistance: 12
   bpm: 120
   spb: 0
@@ -163,7 +164,6 @@ MonoBehaviour:
   - 8
   - 9
   speed: 12
-  timer: 0
   notePrefab: {fileID: 2465097318971369422, guid: 30d3a0f069894a34298915850bf056ab, type: 3}
   score: 0
   scoreText: {fileID: 889078702}
