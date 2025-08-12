@@ -397,7 +397,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794866697}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1422d65a069ca0a4ab573a996ddc70dd, type: 2}
   m_CullingMode: 0
@@ -484,13 +484,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-<<<<<<< HEAD:Assets/Scenes/Dialouge1.unity
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-=======
   m_fontAsset: {fileID: 11400000, guid: be80eb533ccd43e498e9ca425d3fc4a4, type: 2}
   m_sharedMaterial: {fileID: -8155557529888728956, guid: be80eb533ccd43e498e9ca425d3fc4a4, type: 2}
->>>>>>> SimranBranch:Assets/Scenes/Dialouge.unity
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
