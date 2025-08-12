@@ -411,6 +411,11 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+    m_SelectedIDs: 3e790000
+    m_LastClickedID: 31038
+    m_ExpandedIDs: 000000003e79000000ca9a3bffffff7f
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_SelectedIDs: 3e790000
     m_LastClickedID: 31038
@@ -425,6 +430,7 @@ MonoBehaviour:
     m_LastClickedID: 1528
     m_ExpandedIDs: 00000000f805000000ca9a3bffffff7f
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
+>>>>>>> SimranBranch
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,6 +603,11 @@ MonoBehaviour:
       m_LastClickedID: -51142
       m_ExpandedIDs: 3a38ffffee41ffff
 =======
+<<<<<<< HEAD
+      m_SelectedIDs: 3a38ffff
+      m_LastClickedID: -51142
+      m_ExpandedIDs: 3a38ffffee41ffff
+=======
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 323cffff
@@ -604,6 +615,7 @@ MonoBehaviour:
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
 =======
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
+>>>>>>> SimranBranch
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -787,6 +799,9 @@ MonoBehaviour:
       snapCorner: 0
       id: Scene View/Cloth Constraints
 <<<<<<< HEAD
+      index: 2
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
       index: 2
 =======
@@ -795,6 +810,7 @@ MonoBehaviour:
 =======
       index: 3
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
+>>>>>>> SimranBranch
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -964,6 +980,9 @@ MonoBehaviour:
       snapCorner: 0
       id: Scene View/Tilemap Focus
 <<<<<<< HEAD
+      index: 3
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
       index: 3
 =======
@@ -972,6 +991,7 @@ MonoBehaviour:
 =======
       index: 2
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
+>>>>>>> SimranBranch
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1006,11 +1026,16 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> SimranBranch
       displayed: 0
       snapOffset: {x: -209.33337, y: -245.33333}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 3
+<<<<<<< HEAD
+=======
 =======
 =======
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
@@ -1022,6 +1047,7 @@ MonoBehaviour:
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
 =======
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
+>>>>>>> SimranBranch
       id: AINavigationOverlay
       index: 10
       layout: 4
@@ -1041,6 +1067,9 @@ MonoBehaviour:
     m_Target: {x: 0.34473088, y: -0.26348734, z: -10.001241}
     speed: 2
 <<<<<<< HEAD
+    m_Value: {x: 0.34473088, y: -0.26348734, z: -10.001241}
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Value: {x: 0.34473088, y: -0.26348734, z: -10.001241}
 =======
@@ -1049,6 +1078,7 @@ MonoBehaviour:
 =======
     m_Value: {x: 1.4487766, y: -0.54732496, z: -9.990503}
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
+>>>>>>> SimranBranch
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1101,6 +1131,9 @@ MonoBehaviour:
     m_Target: 6.8676972
     speed: 2
 <<<<<<< HEAD
+    m_Value: 6.8676972
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Value: 6.8676972
 =======
@@ -1109,6 +1142,7 @@ MonoBehaviour:
 =======
     m_Value: 5.7938614
 >>>>>>> 3ba21d166008ccc62411dc58cf1debc7e1a31d9e
+>>>>>>> SimranBranch
   m_Ortho:
     m_Target: 1
     speed: 2
