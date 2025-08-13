@@ -40,7 +40,7 @@ public class TraceScript : MonoBehaviour
         }
         if (hitTime - timer < -0.02f)
         {
-            manager.GetComponent<RhythmScript>().score -= 3;
+            
             manager.GetComponent<RhythmScript>().combo = 0;
             Instantiate(miss);
             manager.GetComponent<RhythmScript>().fullCombo = false;

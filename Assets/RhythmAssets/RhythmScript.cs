@@ -30,6 +30,9 @@ public class RhythmScript : MonoBehaviour
     public List<Vector2> holds3;
     public List<Vector2> holds4;
     public bool start;
+    public static bool bigAttack;
+    public bool played;
+    public Animator queenAnim;
 
 
     void Start()
@@ -38,17 +41,29 @@ public class RhythmScript : MonoBehaviour
         fullCombo = true;
         allPerfect = true;
         timer = 0 - spb * 8;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        queenAnim.SetBool("Attack", bigAttack);
         if (timer > -0.15f && ! start)
         {
             start = true;
             GetComponent<AudioSource>().Play();
         }
         timer += Time.deltaTime;
+
+        
+        if (timer > 59 * spb && ! bigAttack && ! played)
+        {
+            bigAttack = true;
+            played = true;
+         
+        }
+     
+        
 
         //GetComponent<BoxCollider2D>().size = new Vector2(speed / 12f * 2, 10);
 

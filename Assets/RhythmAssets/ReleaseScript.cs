@@ -53,7 +53,7 @@ public class ReleaseScript : MonoBehaviour
             }
             else if (hitTime - timer < 0.25f)
             {
-                manager.GetComponent<RhythmScript>().score -= 5;
+                
                 manager.GetComponent<RhythmScript>().combo = 0;
                 manager.GetComponent<RhythmScript>().fullCombo = false;
                 manager.GetComponent<RhythmScript>().allPerfect = false;
@@ -68,7 +68,7 @@ public class ReleaseScript : MonoBehaviour
         }
         if (hitTime - timer < -0.25f)
         {
-            manager.GetComponent<RhythmScript>().score -= 5;
+            
             manager.GetComponent<RhythmScript>().combo = 0;
             Instantiate(miss);
             manager.GetComponent<RhythmScript>().fullCombo = false;
