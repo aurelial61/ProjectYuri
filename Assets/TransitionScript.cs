@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TransitionScript : MonoBehaviour
 {
@@ -12,7 +13,15 @@ public class TransitionScript : MonoBehaviour
     public GameObject dialouge; // finds dialouge
     
     public float transitionTime;
+
+    public Button skipDialogue;
     // Update is called once per frame
+
+    void Start()
+    {
+        skipDialogue.interactable = true;
+        skipDialogue.onClick.AddListener(LoadNextLevel);
+    }
     void Update()
     {
         if (dialouge.GetComponent<Dialouge>().sceneStop == true) // finds when scene is stopped
