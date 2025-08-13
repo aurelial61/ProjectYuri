@@ -29,7 +29,7 @@ public class TraceScript : MonoBehaviour
         {
             if ((hitTime - timer >= -0.02f && hitTime - timer <= 0.02f))
             {
-                manager.GetComponent<RhythmScript>().score += 3;
+                manager.GetComponent<RhythmScript>().score += 1;
                 manager.GetComponent<RhythmScript>().combo++;
                 Instantiate(perfect);
                 Destroy(gameObject);
