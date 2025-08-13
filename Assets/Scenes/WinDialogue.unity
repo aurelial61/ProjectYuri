@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 298475190}
   - component: {fileID: 298475189}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 1528765882}
   - component: {fileID: 1528765884}
   m_Layer: 5
-  m_Name: Dialouge
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -650,7 +650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1275997213}
   lines:
-  - 'Void Queen: Damn you bad at this.'
+  - 'Me: Ngl you kinda cute.'
+  - 'Void Queen: We were literally fighting a few seconds ago wut?'
   textSpeed: 0.1
   sceneStop: 0
 --- !u!1001 &59748691821582774
@@ -663,7 +664,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3814203615790673833, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
       propertyPath: m_Name
-      value: Transition
+      value: FlashTransition
       objectReference: {fileID: 0}
     - target: {fileID: 5109609222482794374, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
       propertyPath: m_LocalPosition.x

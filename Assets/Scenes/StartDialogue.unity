@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 298475190}
   - component: {fileID: 298475189}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 1528765882}
   - component: {fileID: 1528765884}
   m_Layer: 5
-  m_Name: Dialouge
+  m_Name: Dialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -650,9 +650,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1275997213}
   lines:
-  - 'Void Queen: You dare defy me?'
-  - 'Me: You have no control over me.'
-  - 'Void Queen: Fine. Let''s do this the hard way.'
+  - '*In a tower that mimics the heavens above an angel sent by a crumbling kingdom
+    bursts through to challenge its ruler*'
+  - "Rose: \u201CHello? Anyone home?\u201D"
+  - "Velvet: \u201CHello there cute stranger. What are you doing here? I don\u2019t
+    remember letting anyone into here "
+  - "Rose: I am Rose and i\u2019ve come to stop you from enacting your plan to destroy
+    everything not in your little tower! Also i am NOT cute, I am valiant.  "
+  - 'Velvet: What? I have no idea what your talking about in the slightest. So if
+    you could just- '
+  - 'Rose: LIAR! Everyone knows no villain is just going to admit to trying to destroy
+    everything.'
+  - Velvet:If you would just let me finish my sen-
+  - 'Rose: GET READY TO FIGHT ME!'
+  - "Velvet: If you want a fight I\u2019ll give you what you want you pretty fool."
   textSpeed: 0.1
   sceneStop: 0
 --- !u!1001 &59748691821582774
@@ -665,7 +676,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3814203615790673833, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
       propertyPath: m_Name
-      value: Transition
+      value: FlashTransition
       objectReference: {fileID: 0}
     - target: {fileID: 5109609222482794374, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
       propertyPath: m_LocalPosition.x

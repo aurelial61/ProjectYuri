@@ -28,12 +28,13 @@ public class TransitionScript : MonoBehaviour
 
     IEnumerator LoadLevel(int levelIndex)
     {
+        // animation for transition
         transition.enabled = true; // starts transition at this time
         image.Play(); // plays animation
         transition.SetTrigger("Start"); // triggers animator
 
         yield return new WaitForSeconds(transitionTime); // wait for few seconds
 
-        SceneManager.LoadScene(levelIndex); // loads next scene
+        SceneManager.LoadScene(levelIndex); // loads next scene/actual transition
     }
 }
