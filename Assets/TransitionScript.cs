@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TransitionScript : MonoBehaviour
 {
     // animation
-    public Animation image;
+    //public Animation image;
     public Animator transition;
 
     public GameObject dialouge; // finds dialouge
@@ -30,11 +30,13 @@ public class TransitionScript : MonoBehaviour
     {
         // animation for transition
         transition.enabled = true; // starts transition at this time
-        image.Play(); // plays animation
+        //image.Play(); // plays animation
         transition.SetTrigger("Start"); // triggers animator
 
         yield return new WaitForSeconds(transitionTime); // wait for few seconds
 
         SceneManager.LoadScene(levelIndex); // loads next scene/actual transition
+        //SceneManager.LoadScene("insert scene here"); // loads next scene according to name;
+        //if transition not needed, just remove prefab from hierachy
     }
 }
