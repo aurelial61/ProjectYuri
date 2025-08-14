@@ -30,6 +30,9 @@ public class RhythmScript : MonoBehaviour
     public List<Vector2> holds3;
     public List<Vector2> holds4;
     public bool start;
+    public static bool bigAttack;
+    public bool played;
+    public Animator queenAnim;
 
 
     void Start()
@@ -38,17 +41,29 @@ public class RhythmScript : MonoBehaviour
         fullCombo = true;
         allPerfect = true;
         timer = 0 - spb * 8;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (timer > -0.15f && ! start)
+        queenAnim.SetBool("Attack", bigAttack);
+        if (timer > 0f && ! start)
         {
             start = true;
             GetComponent<AudioSource>().Play();
         }
         timer += Time.deltaTime;
+
+        
+        if (timer > 59 * spb && ! bigAttack && ! played)
+        {
+            bigAttack = true;
+            played = true;
+         
+        }
+     
+        
 
         //GetComponent<BoxCollider2D>().size = new Vector2(speed / 12f * 2, 10);
 
@@ -73,7 +88,7 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().speed = speed;
             thisNote.GetComponent<NoteScript>().hitTime = notes[0] *spb;
             thisNote.GetComponent<NoteScript>().manager = gameObject;
-            thisNote.GetComponent<NoteScript>().key = KeyCode.F;
+            thisNote.GetComponent<NoteScript>().key = KeyCode.D;
             notes.RemoveAt(0);
 
         }
@@ -87,7 +102,7 @@ public class RhythmScript : MonoBehaviour
             holdNote.GetComponent<HoldScript>().duration = holds[0].y * spb;
             holdNote.GetComponent<HoldScript>().spb = spb;
             holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
-            holdNote.GetComponent<HoldScript>().key = KeyCode.F;
+            holdNote.GetComponent<HoldScript>().key = KeyCode.D;
             holds.RemoveAt(0);
         }
 
@@ -97,7 +112,7 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().speed = speed;
             thisNote.GetComponent<NoteScript>().hitTime = notes2[0] * spb;
             thisNote.GetComponent<NoteScript>().manager = gameObject;
-            thisNote.GetComponent<NoteScript>().key = KeyCode.G;
+            thisNote.GetComponent<NoteScript>().key = KeyCode.F;
             notes2.RemoveAt(0);
 
         }
@@ -111,7 +126,7 @@ public class RhythmScript : MonoBehaviour
             holdNote.GetComponent<HoldScript>().duration = holds2[0].y * spb;
             holdNote.GetComponent<HoldScript>().spb = spb;
             holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
-            holdNote.GetComponent<HoldScript>().key = KeyCode.G;
+            holdNote.GetComponent<HoldScript>().key = KeyCode.F;
             holds2.RemoveAt(0);
         }
 
@@ -121,7 +136,7 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().speed = speed;
             thisNote.GetComponent<NoteScript>().hitTime = notes3[0] * spb;
             thisNote.GetComponent<NoteScript>().manager = gameObject;
-            thisNote.GetComponent<NoteScript>().key = KeyCode.H;
+            thisNote.GetComponent<NoteScript>().key = KeyCode.J;
             notes3.RemoveAt(0);
 
         }
@@ -135,7 +150,7 @@ public class RhythmScript : MonoBehaviour
             holdNote.GetComponent<HoldScript>().duration = holds3[0].y * spb;
             holdNote.GetComponent<HoldScript>().spb = spb;
             holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
-            holdNote.GetComponent<HoldScript>().key = KeyCode.H;
+            holdNote.GetComponent<HoldScript>().key = KeyCode.J;
             holds3.RemoveAt(0);
         }
 
@@ -145,7 +160,7 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().speed = speed;
             thisNote.GetComponent<NoteScript>().hitTime = notes4[0] * spb;
             thisNote.GetComponent<NoteScript>().manager = gameObject;
-            thisNote.GetComponent<NoteScript>().key = KeyCode.J;
+            thisNote.GetComponent<NoteScript>().key = KeyCode.K;
             notes4.RemoveAt(0);
 
         }
@@ -159,9 +174,10 @@ public class RhythmScript : MonoBehaviour
             holdNote.GetComponent<HoldScript>().duration = holds4[0].y * spb;
             holdNote.GetComponent<HoldScript>().spb = spb;
             holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
-            holdNote.GetComponent<HoldScript>().key = KeyCode.J;
+            holdNote.GetComponent<HoldScript>().key = KeyCode.K;
             holds4.RemoveAt(0);
         }
+        
     }
 
     
