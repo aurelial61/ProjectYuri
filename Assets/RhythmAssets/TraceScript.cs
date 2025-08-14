@@ -32,6 +32,7 @@ public class TraceScript : MonoBehaviour
             {
                 manager.GetComponent<RhythmScript>().score += 1 + manager.GetComponent<RhythmScript>().combo / 20;
                 manager.GetComponent<RhythmScript>().combo++;
+                manager.GetComponent<RhythmScript>().perfects++;
                 Instantiate(perfect);
                 Instantiate(effectPrefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);
@@ -46,6 +47,7 @@ public class TraceScript : MonoBehaviour
             
             manager.GetComponent<RhythmScript>().combo = 0;
             Instantiate(miss);
+            manager.GetComponent<RhythmScript>().misses++;
             manager.GetComponent<RhythmScript>().fullCombo = false;
             manager.GetComponent<RhythmScript>().allPerfect = false;
             Destroy(gameObject);

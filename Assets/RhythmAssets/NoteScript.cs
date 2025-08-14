@@ -30,10 +30,11 @@ public class NoteScript : MonoBehaviour
         
         if ((Input.GetKeyDown(key)))
         {
-            if ((hitTime - timer <= 0.15f && hitTime - timer > 0.1f) || (hitTime - timer < -0.1f && hitTime - timer >= -0.15f))
+            if ((hitTime - timer <= 0.10f && hitTime - timer > 0.1f) || (hitTime - timer < -0.1f && hitTime - timer >= -0.10f))
             {
                 manager.GetComponent<RhythmScript>().score += 5;
                 manager.GetComponent<RhythmScript>().combo = 0;
+                manager.GetComponent<RhythmScript>().goods++;
                 manager.GetComponent<RhythmScript>().fullCombo = false;
                 manager.GetComponent<RhythmScript>().allPerfect = false;
                 Instantiate(good);
@@ -41,44 +42,48 @@ public class NoteScript : MonoBehaviour
 
 
             }
-            else if ((hitTime - timer <= 0.10f && hitTime - timer > 0.02f) || (hitTime - timer < -0.02f && hitTime - timer >= -0.1f))
+            else if ((hitTime - timer <= 0.07f && hitTime - timer > 0.02f) || (hitTime - timer < -0.02f && hitTime - timer >= -0.07f))
             {
                 manager.GetComponent<RhythmScript>().score += 10 + manager.GetComponent<RhythmScript>().combo / 10;
                 manager.GetComponent<RhythmScript>().combo++;
+                manager.GetComponent<RhythmScript>().greats++;
                 manager.GetComponent<RhythmScript>().allPerfect = false;
                 Instantiate(great);
                 Instantiate(effectPrefab, transform.position, Quaternion.identity).GetComponent<HitScript>().play = true;
 
             }
-            else if ((hitTime - timer >= -0.02f && hitTime - timer <= 0.02f))
+            else if ((hitTime - timer >= -0.03f && hitTime - timer <= 0.03f))
             {
                 manager.GetComponent<RhythmScript>().score += 15 + manager.GetComponent<RhythmScript>().combo / 10;
                 manager.GetComponent<RhythmScript>().combo++;
+                manager.GetComponent<RhythmScript>().perfects++;
                 Instantiate(perfect);
                 Instantiate(effectPrefab, transform.position, Quaternion.identity).GetComponent<HitScript>().play = true;
                 
             }
-            else if (hitTime - timer < 0.20f)
+            else if (hitTime - timer < 0.15f)
             {
                 
                 manager.GetComponent<RhythmScript>().combo = 0;
                 manager.GetComponent<RhythmScript>().fullCombo = false;
                 manager.GetComponent<RhythmScript>().allPerfect = false;
+                manager.GetComponent<RhythmScript>().misses++;
                 Instantiate(miss);
 
             }
 
-            if (hitTime - timer <= 0.20f)
+            if (hitTime - timer <= 0.15f)
             {
                 Destroy(gameObject);
             }
             
         }
-        if (hitTime - timer < -0.20f)
+        if (hitTime - timer < -0.15f)
         {
             
             manager.GetComponent<RhythmScript>().combo = 0;
             Instantiate(miss);
+            manager.GetComponent<RhythmScript>().misses++;
             manager.GetComponent<RhythmScript>().fullCombo = false;
             manager.GetComponent<RhythmScript>().allPerfect = false;
             Destroy(gameObject);
