@@ -169,6 +169,25 @@ MonoBehaviour:
   - 89
   - 90
   - 97.75
+  - 140
+  - 146
+  - 152
+  - 168
+  - 178
+  - 183
+  - 185
+  - 192
+  - 202
+  - 207
+  - 209
+  - 216
+  - 219
+  - 221
+  - 224
+  - 234
+  - 239
+  - 241
+  - 248
   notes2:
   - 9.5
   - 10.5
@@ -182,6 +201,43 @@ MonoBehaviour:
   - 90.5
   - 97
   - 98
+  - 137
+  - 139
+  - 145.5
+  - 146.5
+  - 151.5
+  - 152.5
+  - 155
+  - 157
+  - 160
+  - 167.5
+  - 168.5
+  - 175
+  - 177
+  - 183.5
+  - 184.5
+  - 187
+  - 189
+  - 191.5
+  - 192.5
+  - 200
+  - 207.5
+  - 208.5
+  - 215.5
+  - 216.5
+  - 223.5
+  - 224.5
+  - 230.5
+  - 231
+  - 233
+  - 239.5
+  - 240.5
+  - 242
+  - 247.5
+  - 248.5
+  - 251
+  - 253
+  - 256
   notes3:
   - 10
   - 26.5
@@ -191,6 +247,44 @@ MonoBehaviour:
   - 81.75
   - 105.5
   - 106.5
+  - 137.5
+  - 138.5
+  - 145
+  - 147
+  - 151
+  - 153
+  - 155.5
+  - 156.5
+  - 159.5
+  - 160.5
+  - 164
+  - 164.5
+  - 166.5
+  - 167
+  - 169
+  - 175.5
+  - 176.5
+  - 184
+  - 187.5
+  - 188.5
+  - 191
+  - 193
+  - 194
+  - 195
+  - 199.5
+  - 200.5
+  - 208
+  - 219.5
+  - 220.5
+  - 228
+  - 228.5
+  - 231.5
+  - 232.5
+  - 240
+  - 251.5
+  - 252.5
+  - 255.5
+  - 256.5
   notes4:
   - 18
   - 41
@@ -198,6 +292,39 @@ MonoBehaviour:
   - 82
   - 105
   - 106
+  - 138
+  - 148
+  - 156
+  - 159
+  - 161
+  - 162
+  - 163
+  - 170
+  - 176
+  - 188
+  - 196
+  - 196.5
+  - 199
+  - 201
+  - 210
+  - 215
+  - 217
+  - 220
+  - 223
+  - 225
+  - 226
+  - 227
+  - 232
+  - 247
+  - 249
+  - 252
+  - 255
+  - 257
+  - 258
+  - 259
+  - 260
+  - 260.5
+  - 261.5
   speed: 12
   combo: 0
   fullCombo: 0
@@ -213,6 +340,9 @@ MonoBehaviour:
   - {x: 81, y: 4}
   - {x: 105, y: 4}
   - {x: 111, y: 1}
+  - {x: 119, y: 2}
+  - {x: 125, y: 2}
+  - {x: 249, y: 16}
   holds2:
   - {x: 48, y: 1}
   - {x: 61, y: 2}
@@ -222,6 +352,9 @@ MonoBehaviour:
   - {x: 103, y: 2}
   - {x: 109, y: 2}
   - {x: 112, y: 1}
+  - {x: 117, y: 2}
+  - {x: 123, y: 2}
+  - {x: 127, y: 1}
   holds3:
   - {x: 49, y: 4}
   - {x: 59, y: 2}
@@ -231,7 +364,10 @@ MonoBehaviour:
   - {x: 91, y: 2}
   - {x: 95, y: 2}
   - {x: 101, y: 2}
-  - {x: 113, y: 3}
+  - {x: 113, y: 4}
+  - {x: 121, y: 2}
+  - {x: 128, y: 1}
+  - {x: 241, y: 8}
   holds4:
   - {x: 31, y: 2}
   - {x: 57, y: 2}
@@ -240,7 +376,12 @@ MonoBehaviour:
   - {x: 93, y: 2}
   - {x: 97, y: 4}
   - {x: 111, y: 2}
+  - {x: 127, y: 1}
+  - {x: 129, y: 8}
+  - {x: 233, y: 8}
   start: 0
+  played: 0
+  queenAnim: {fileID: 1755262951}
 --- !u!61 &92141622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -487,7 +628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: F
+  m_text: D
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b7b0762d5588544585f47acfeb1f7e8, type: 2}
   m_sharedMaterial: {fileID: 7921180614862179831, guid: 7b7b0762d5588544585f47acfeb1f7e8, type: 2}
@@ -823,7 +964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32c7f0f83599814890e2b9e2383080a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 104
+  key: 106
 --- !u!1 &495723777
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +1062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32c7f0f83599814890e2b9e2383080a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 106
+  key: 107
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1430,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: J
+  m_text: K
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b7b0762d5588544585f47acfeb1f7e8, type: 2}
   m_sharedMaterial: {fileID: 7921180614862179831, guid: 7b7b0762d5588544585f47acfeb1f7e8, type: 2}
@@ -1501,7 +1642,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: -47663086, guid: d647059255bc4f3439e94f1accc597b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1566,7 +1707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: H
+  m_text: J
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b7b0762d5588544585f47acfeb1f7e8, type: 2}
   m_sharedMaterial: {fileID: 7921180614862179831, guid: 7b7b0762d5588544585f47acfeb1f7e8, type: 2}
@@ -1796,7 +1937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32c7f0f83599814890e2b9e2383080a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 103
+  key: 102
 --- !u!1 &1404084428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,7 +2035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32c7f0f83599814890e2b9e2383080a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 102
+  key: 100
 --- !u!1 &1528697371
 GameObject:
   m_ObjectHideFlags: 0
@@ -2108,7 +2249,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 1901440919, guid: e92efd2ea83c3884286e10759a7ea70a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2173,7 +2314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: G
+  m_text: F
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7b7b0762d5588544585f47acfeb1f7e8, type: 2}
   m_sharedMaterial: {fileID: 7921180614862179831, guid: 7b7b0762d5588544585f47acfeb1f7e8, type: 2}
