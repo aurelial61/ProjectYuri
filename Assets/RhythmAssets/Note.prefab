@@ -180,3 +180,4 @@ MonoBehaviour:
   good: {fileID: 2174179522653334094, guid: c0498e5c4494ac743b0240af942ced03, type: 3}
   miss: {fileID: 4592535912717290923, guid: 0885e017373ca9046a81e3b48468d3b5, type: 3}
   key: 0
+  effectPrefab: {fileID: 7764875349279722318, guid: b44e469e477ecfd488f871933e03f15f, type: 3}

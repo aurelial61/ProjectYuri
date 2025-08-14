@@ -12,6 +12,7 @@ public class TraceScript : MonoBehaviour
     public float hitTime;
     public GameObject perfect;
     public GameObject miss;
+    public GameObject effectPrefab;
     
     void Start()
     {
@@ -29,10 +30,12 @@ public class TraceScript : MonoBehaviour
         {
             if ((hitTime - timer >= -0.02f && hitTime - timer <= 0.02f))
             {
-                manager.GetComponent<RhythmScript>().score += 1;
+                manager.GetComponent<RhythmScript>().score += 1 + manager.GetComponent<RhythmScript>().combo / 20;
                 manager.GetComponent<RhythmScript>().combo++;
                 Instantiate(perfect);
+                Instantiate(effectPrefab, transform.position, Quaternion.identity);
                 Destroy(gameObject);
+
             }
             
             

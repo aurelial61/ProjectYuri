@@ -48,7 +48,7 @@ public class RhythmScript : MonoBehaviour
     void Update()
     {
         queenAnim.SetBool("Attack", bigAttack);
-        if (timer > -0.15f && ! start)
+        if (timer > 0f && ! start)
         {
             start = true;
             GetComponent<AudioSource>().Play();
