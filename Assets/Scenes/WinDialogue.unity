@@ -246,8 +246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62d629ee2841b6c43ac6c2d3eef4ff18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transition: {fileID: 0}
-  dialouge: {fileID: 0}
+  transition: {fileID: 995918425}
+  dialogue: {fileID: 1528765880}
   transitionTime: 0.5
   skipDialogue: {fileID: 886535154}
 --- !u!114 &231404752
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -759,7 +759,7 @@ RectTransform:
   m_GameObject: {fileID: 886535153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 723336564}
@@ -770,6 +770,90 @@ RectTransform:
   m_AnchoredPosition: {x: -25, y: -25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 1}
+--- !u!1 &886777104
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 886777106}
+  - component: {fileID: 886777105}
+  m_Layer: 5
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &886777105
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886777104}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 14.4, y: 8.121094}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &886777106
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 886777104}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &995918425 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 208244534084835976, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
@@ -921,6 +1005,7 @@ GameObject:
   - component: {fileID: 1528765883}
   - component: {fileID: 1528765882}
   - component: {fileID: 1528765884}
+  - component: {fileID: 1528765885}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -1000,10 +1085,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1275997213}
   lines:
-  - 'Me: Ngl you kinda cute.'
-  - 'Void Queen: We were literally fighting a few seconds ago wut?'
+  - "*Our hero\u2019s fight draws to a close, was they stand triumphantly over their
+    foe, yet something compels her to speak*"
+  - "Rose \u201C...\u201D"
+  - "Rose: \u201CI won. You\u2019re no longer going to be able to destroy the world
+    with your crazy black hole shenanigans.\u201D"
+  - "Velvet: \u201CCan I get a second to explain the fact that i am NOT trying to
+    destroy the world?\u201D"
+  - "Rose \u201C... Go ahead\u201D"
+  - "Velvet: \u201CI am not trying to destroy the world, YOU"
+  charSprites:
+  - {fileID: 1924140627, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  - {fileID: -1187118654, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  - {fileID: 1777638452, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
+  - {fileID: 902001813, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  - {fileID: 1777638452, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
+  spriteRenderer: {fileID: 886777105}
+  currentSprite: 0
+  sprite: {fileID: 886777104}
   textSpeed: 0.1
   sceneStop: 0
+--- !u!212 &1528765885
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528765880}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 1924140627, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 14.4, y: 8.128124}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &59748691821582774
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1069,6 +1222,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6171692413283526519, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 1528765880}
+    - target: {fileID: 6171692413283526519, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
       propertyPath: dialouge
       value: 
       objectReference: {fileID: 1528765880}
@@ -1076,6 +1233,10 @@ PrefabInstance:
       propertyPath: transition
       value: 
       objectReference: {fileID: 995918425}
+    - target: {fileID: 6171692413283526519, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
+      propertyPath: skipDialogue
+      value: 
+      objectReference: {fileID: 886535154}
     - target: {fileID: 6171692413283526519, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
       propertyPath: transitionTime
       value: 0.5
@@ -1099,3 +1260,4 @@ SceneRoots:
   - {fileID: 298475192}
   - {fileID: 324897598}
   - {fileID: 231404755}
+  - {fileID: 886777106}
