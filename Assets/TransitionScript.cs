@@ -21,8 +21,15 @@ public class TransitionScript : MonoBehaviour
 
     void Start()
     {
-        skipDialogue.interactable = true;
-        skipDialogue.onClick.AddListener(LoadNextLevel);
+        if (SceneManager.GetActiveScene().name == "LoseDialogue" || SceneManager.GetActiveScene().name == "StartDialogue")
+        {
+            skipDialogue.interactable = true;
+            skipDialogue.onClick.AddListener(LoadNextLevel);
+        }
+        else
+        {
+            skipDialogue.interactable = false;
+        }
     }
     void Update()
     {
@@ -34,10 +41,17 @@ public class TransitionScript : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1)); // transitions to next scene according to index
+        if (SceneManager.GetActiveScene().name == "WinDialogue")
+        {
+            StopAllCoroutines();
+        }
+        else
+        {
+            StartCoroutine(LoadLevel()); // transitions to next scene according to index
+        }
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    IEnumerator LoadLevel()
     {
         // animation for transition
         transition.enabled = true; // starts transition at this time
@@ -46,7 +60,7 @@ public class TransitionScript : MonoBehaviour
 
         yield return new WaitForSeconds(transitionTime); // wait for few seconds
 
-        SceneManager.LoadScene(levelIndex); // loads next scene/actual transition
+        SceneManager.LoadScene("RhythmScene1"); // loads next scene/actual transition
         //SceneManager.LoadScene("insert scene here"); // loads next scene according to name;
         //if transition not needed, just remove prefab from hierachy
     }
