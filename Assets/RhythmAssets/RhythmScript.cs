@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class RhythmScript : MonoBehaviour
 {
@@ -38,6 +39,15 @@ public class RhythmScript : MonoBehaviour
     public int greats;
     public int goods;
     public int misses;
+    public GameObject register1;
+    public GameObject register2;
+    public GameObject register3;
+    public GameObject register4;
+    public GameObject endPrefab;
+    public TextMeshProUGUI winText;
+    public TextMeshProUGUI statText;
+    public bool end;
+    public bool showStats;
 
 
     void Start()
@@ -46,6 +56,8 @@ public class RhythmScript : MonoBehaviour
         fullCombo = true;
         allPerfect = true;
         timer = 0 - spb * 8;
+        winText.text = "";
+        statText.text = "";
         
     }
 
@@ -73,7 +85,46 @@ public class RhythmScript : MonoBehaviour
             maxCombo = combo;
         }
      
-        
+        if (timer > 272 * spb && ! end)
+        {
+            Instantiate(endPrefab);
+            if (allPerfect)
+            {
+                winText.text = "ALL PERFECT!!!!!";
+            }
+            else if (fullCombo)
+            {
+                winText.text = "FULL COMBO!!!";
+            }
+            else if (score > 2500)
+            {
+                winText.text = "VICTORY";
+            }
+            else
+            {
+                winText.text = "DEFEAT";
+            }
+            end = true;
+        }
+
+        if (timer > 276 * spb && ! showStats)
+        {
+            showStats = true;
+            statText.text = "Max combo: " + maxCombo + "\nPerfect: " + perfects + 
+                "\nGreat: " + greats + "\nGood: " + goods + "\nMiss: " + misses;
+        }
+
+        if (timer > 292 * spb)
+        {
+            if (score > 2500)
+            {
+                SceneManager.LoadScene("WinDialogue");
+            }
+            else
+            {
+                SceneManager.LoadScene("LoseDialogue");
+            }
+        }
 
         //GetComponent<BoxCollider2D>().size = new Vector2(speed / 12f * 2, 10);
 
@@ -99,6 +150,7 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().hitTime = notes[0] *spb;
             thisNote.GetComponent<NoteScript>().manager = gameObject;
             thisNote.GetComponent<NoteScript>().key = KeyCode.D;
+            thisNote.GetComponent<NoteScript>().register = register1;
             notes.RemoveAt(0);
 
         }
@@ -113,6 +165,7 @@ public class RhythmScript : MonoBehaviour
             holdNote.GetComponent<HoldScript>().spb = spb;
             holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
             holdNote.GetComponent<HoldScript>().key = KeyCode.D;
+            holdNote.GetComponent<HoldScript>().register = register1;
             holds.RemoveAt(0);
         }
 
@@ -123,6 +176,7 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().hitTime = notes2[0] * spb;
             thisNote.GetComponent<NoteScript>().manager = gameObject;
             thisNote.GetComponent<NoteScript>().key = KeyCode.F;
+            thisNote.GetComponent<NoteScript>().register = register2;
             notes2.RemoveAt(0);
 
         }
@@ -137,6 +191,7 @@ public class RhythmScript : MonoBehaviour
             holdNote.GetComponent<HoldScript>().spb = spb;
             holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
             holdNote.GetComponent<HoldScript>().key = KeyCode.F;
+            holdNote.GetComponent<HoldScript>().register = register2;
             holds2.RemoveAt(0);
         }
 
@@ -147,6 +202,7 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().hitTime = notes3[0] * spb;
             thisNote.GetComponent<NoteScript>().manager = gameObject;
             thisNote.GetComponent<NoteScript>().key = KeyCode.J;
+            thisNote.GetComponent<NoteScript>().register = register3;
             notes3.RemoveAt(0);
 
         }
@@ -161,6 +217,7 @@ public class RhythmScript : MonoBehaviour
             holdNote.GetComponent<HoldScript>().spb = spb;
             holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
             holdNote.GetComponent<HoldScript>().key = KeyCode.J;
+            holdNote.GetComponent<HoldScript>().register = register3;
             holds3.RemoveAt(0);
         }
 
@@ -171,6 +228,7 @@ public class RhythmScript : MonoBehaviour
             thisNote.GetComponent<NoteScript>().hitTime = notes4[0] * spb;
             thisNote.GetComponent<NoteScript>().manager = gameObject;
             thisNote.GetComponent<NoteScript>().key = KeyCode.K;
+            thisNote.GetComponent<NoteScript>().register = register4;
             notes4.RemoveAt(0);
 
         }
@@ -185,6 +243,7 @@ public class RhythmScript : MonoBehaviour
             holdNote.GetComponent<HoldScript>().spb = spb;
             holdNote.GetComponent<HoldScript>().spawnDistance = spawnDistance;
             holdNote.GetComponent<HoldScript>().key = KeyCode.K;
+            holdNote.GetComponent<HoldScript>().register = register4;
             holds4.RemoveAt(0);
         }
         

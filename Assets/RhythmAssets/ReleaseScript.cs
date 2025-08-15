@@ -40,7 +40,7 @@ public class ReleaseScript : MonoBehaviour
                 Instantiate(good);
                 
             }
-            else if ((hitTime - timer <= 0.10f && hitTime - timer > 0.02f) || (hitTime - timer < -0.02f && hitTime - timer >= -0.1f))
+            else if ((hitTime - timer <= 0.10f && hitTime - timer > 0.03f) || (hitTime - timer < -0.03f && hitTime - timer >= -0.1f))
             {
                 manager.GetComponent<RhythmScript>().score += 10 + manager.GetComponent<RhythmScript>().combo / 10;
                 

@@ -21,6 +21,7 @@ public class HoldScript : MonoBehaviour
     public GameObject good;
     public GameObject miss;
     public GameObject releasePrefab;
+    public GameObject register;
     public KeyCode key;
     
     public bool release;
@@ -33,6 +34,7 @@ public class HoldScript : MonoBehaviour
         thisNote.GetComponent<NoteScript>().hitTime = hitTime;
         thisNote.GetComponent<NoteScript>().manager = manager;
         thisNote.GetComponent<NoteScript>().key = key;
+        thisNote.GetComponent<NoteScript>().register = register;
         
     }
 
