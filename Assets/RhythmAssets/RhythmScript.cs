@@ -32,7 +32,12 @@ public class RhythmScript : MonoBehaviour
     public bool start;
     public static bool bigAttack;
     public bool played;
+    public int maxCombo;
     public Animator queenAnim;
+    public int perfects;
+    public int greats;
+    public int goods;
+    public int misses;
 
 
     void Start()
@@ -48,7 +53,7 @@ public class RhythmScript : MonoBehaviour
     void Update()
     {
         queenAnim.SetBool("Attack", bigAttack);
-        if (timer > 0f && ! start)
+        if (timer > -0.2f && ! start)
         {
             start = true;
             GetComponent<AudioSource>().Play();
@@ -61,6 +66,11 @@ public class RhythmScript : MonoBehaviour
             bigAttack = true;
             played = true;
          
+        }
+
+        if (combo > maxCombo)
+        {
+            maxCombo = combo;
         }
      
         

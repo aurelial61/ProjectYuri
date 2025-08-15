@@ -35,6 +35,7 @@ public class ReleaseScript : MonoBehaviour
                 manager.GetComponent<RhythmScript>().combo = 0;
                 manager.GetComponent<RhythmScript>().fullCombo = false;
                 manager.GetComponent<RhythmScript>().allPerfect = false;
+                manager.GetComponent<RhythmScript>().goods++;
                 Instantiate(effectPrefab, transform.position, Quaternion.identity);
                 Instantiate(good);
                 
@@ -45,13 +46,15 @@ public class ReleaseScript : MonoBehaviour
                 
                 manager.GetComponent<RhythmScript>().combo++;
                 manager.GetComponent<RhythmScript>().allPerfect = false;
+                manager.GetComponent<RhythmScript>().greats++;
                 Instantiate(effectPrefab, transform.position, Quaternion.identity);
                 Instantiate(great);
             }
-            else if ((hitTime - timer >= -0.02f && hitTime - timer <= 0.02f))
+            else if ((hitTime - timer >= -0.03f && hitTime - timer <= 0.03f))
             {
                 manager.GetComponent<RhythmScript>().score += 15 + manager.GetComponent<RhythmScript>().combo / 10;
                 manager.GetComponent<RhythmScript>().combo++;
+                manager.GetComponent<RhythmScript>().perfects++;
                 Instantiate(effectPrefab, transform.position, Quaternion.identity);
                 Instantiate(perfect);
             }
@@ -61,6 +64,7 @@ public class ReleaseScript : MonoBehaviour
                 manager.GetComponent<RhythmScript>().combo = 0;
                 manager.GetComponent<RhythmScript>().fullCombo = false;
                 manager.GetComponent<RhythmScript>().allPerfect = false;
+                manager.GetComponent<RhythmScript>().misses++;
                 Instantiate(miss);
             }
 
@@ -77,6 +81,7 @@ public class ReleaseScript : MonoBehaviour
             Instantiate(miss);
             manager.GetComponent<RhythmScript>().fullCombo = false;
             manager.GetComponent<RhythmScript>().allPerfect = false;
+            manager.GetComponent<RhythmScript>().misses++;
             Destroy(gameObject);
         }
 
