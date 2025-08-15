@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class RhythmScript : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float offset;
     public float timer;
     public float spawnDistance;
     public float bpm;
@@ -48,7 +49,7 @@ public class RhythmScript : MonoBehaviour
     public TextMeshProUGUI statText;
     public bool end;
     public bool showStats;
-
+    
 
     void Start()
     {
@@ -65,7 +66,7 @@ public class RhythmScript : MonoBehaviour
     void Update()
     {
         queenAnim.SetBool("Attack", bigAttack);
-        if (timer > -0.2f && ! start)
+        if (timer > offset && ! start)
         {
             start = true;
             GetComponent<AudioSource>().Play();

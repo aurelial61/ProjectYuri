@@ -34,7 +34,7 @@ public class NoteScript : MonoBehaviour
 
             
         }
-        if (hitTime - timer < -0.1f)
+        if (hitTime - timer < -0.2f)
         {
             
             manager.GetComponent<RhythmScript>().combo = 0;
@@ -58,7 +58,7 @@ public class NoteScript : MonoBehaviour
             manager.GetComponent<RhythmScript>().allPerfect = false;
             Instantiate(good);
             Instantiate(effectPrefab, transform.position, Quaternion.identity).GetComponent<HitScript>().play = true;
-
+            
 
         }
         else if ((hitTime - timer <= 0.1f && hitTime - timer > 0.03f) || (hitTime - timer < -0.03f && hitTime - timer >= -0.1f))
@@ -69,7 +69,7 @@ public class NoteScript : MonoBehaviour
             manager.GetComponent<RhythmScript>().allPerfect = false;
             Instantiate(great);
             Instantiate(effectPrefab, transform.position, Quaternion.identity).GetComponent<HitScript>().play = true;
-
+            
         }
         else if ((hitTime - timer >= -0.03f && hitTime - timer <= 0.03f))
         {
