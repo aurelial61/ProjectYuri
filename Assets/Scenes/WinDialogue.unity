@@ -1084,7 +1084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1275997213}
   lines:
-  - "*Our hero\u2019s fight draws to a close, was they stand triumphantly over their
+  - "*Our hero\u2019s fight draws to a close, as she stands triumphantly over their
     foe, yet something compels her to speak*"
   - "Rose \u201C...\u201D"
   - "Rose: \u201CI won. You\u2019re no longer going to be able to destroy the world
@@ -1092,13 +1092,13 @@ MonoBehaviour:
   - "Velvet: \u201CCan I get a second to explain the fact that i am NOT trying to
     destroy the world?\u201D"
   - "Rose \u201C... Go ahead\u201D"
-  - "Velvet: \u201CI am not trying to destroy the world, YOU  didn\u2019t let me
-    finish my sentence and attacked me\u2026\u201D"
+  - "Velvet: \u201CI am not trying to destroy the world. YOU didn\u2019t let me finish
+    my sentence and attacked me\u2026\u201D"
   - "Rose: \u201COh\u2026sorry. How can I pay you back?\u201D\r"
   - "Velvet \u201CI mean you could take me on a date-\u201D\r\r"
-  - "Rose \u201CYES! Ahem- i mean of course if that's all\u201D"
+  - "Rose \u201CYES! Ahem- i mean of course if that's all.\u201D"
   - "Velvet: \u201CThen what are we waiting for? Come, I know a place.\u201D"
-  - "Rose: \u201CYes Ma\u2019am\u201D"
+  - "Rose: \u201CYes ma\u2019am\u201D"
   charSprites:
   - {fileID: 1924140627, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
   - {fileID: -1187118654, guid: e5c7ae49167226544a7bcce17d800455, type: 3}

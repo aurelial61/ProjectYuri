@@ -1110,11 +1110,11 @@ MonoBehaviour:
   - '*In a tower that mimics the heavens above an angel sent by a crumbling kingdom
     bursts through to challenge its ruler*'
   - "Rose: \u201CHello? Anyone home?\u201D"
-  - "Velvet: \u201CHello there colorful stranger. What are you doing here? I don\u2019t
+  - "Velvet: \u201CHello there little lady. What are you doing here? I don\u2019t
     remember letting anyone into here "
   - "Rose: I am Rose and I\u2019ve come to stop you from enacting your plan to destroy
-    everything not in your little tower! And yes, I am indeed a colorful person,
-    and I am valiant.  "
+    everything not in your little tower! Also, don't call me little, I am more valiant
+    and stronger than you could expect.  "
   - 'Velvet: What? I have no idea what your talking about in the slightest. So if
     you could just- '
   - 'Rose: LIAR! Everyone knows no villain is just going to admit to trying to destroy
@@ -1123,72 +1123,42 @@ MonoBehaviour:
   - 'Rose: GET READY TO FIGHT ME!'
   - "Velvet: If you want a fight I\u2019ll give you what you want you fool."
   charSprites:
-  - {fileID: -1187118654, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
-  - {fileID: 1777638452, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
-  - {fileID: -34384896, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
-  - {fileID: 1777638452, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
-  - {fileID: 902001813, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
-  - {fileID: 1777638452, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
-  - {fileID: 899422382, guid: e5e9846ff323bea40b54354a80bb90ed, type: 3}
-  - {fileID: 1777638452, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
-  - {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  - {fileID: 1924140627, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  - {fileID: 1986431102, guid: b2a5292eed4dca240ad50580bd557c93, type: 3}
+  - {fileID: 1924140627, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  - {fileID: 1986431102, guid: b2a5292eed4dca240ad50580bd557c93, type: 3}
+  - {fileID: 1924140627, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  - {fileID: 1986431102, guid: b2a5292eed4dca240ad50580bd557c93, type: 3}
+  - {fileID: 1924140627, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  - {fileID: 1986431102, guid: b2a5292eed4dca240ad50580bd557c93, type: 3}
+  - {fileID: 1986431102, guid: b2a5292eed4dca240ad50580bd557c93, type: 3}
+  - {fileID: 1924140627, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
+  spriteRenderer: {fileID: 1811353020}
   currentSprite: 0
   sprite: {fileID: 1811353019}
   textSpeed: 0.1
   sceneStop: 0
---- !u!212 &1528765885
-SpriteRenderer:
+--- !u!95 &1528765885
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528765880}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f7265f7ab742604493f3889a4bf15d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1811353019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811353021}
   - component: {fileID: 1811353020}
+  - component: {fileID: 1811353022}
   m_Layer: 5
   m_Name: Sprite
   m_TagString: Untagged
@@ -1267,12 +1238,33 @@ Transform:
   m_GameObject: {fileID: 1811353019}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15, y: 0.05, z: 0}
+  m_LocalPosition: {x: -0.1, y: 0.09, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1811353022
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811353019}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 606ba84b16ce4674a97c9843673d8dac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &59748691821582774
 PrefabInstance:
   m_ObjectHideFlags: 0

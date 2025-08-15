@@ -1057,12 +1057,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1275997213}
   lines:
-  - '*Our heroes fight tragically ends in a loss for them, however, as they fall
-    to their knees, their adversary speaks up.*'
+  - '*Rose''s fight tragically ends in a loss for her, however, as she falls to her
+    knees, her adversary speaks up.*'
   - "Velvet: \u201CFor a fool you\u2019re pretty strong. An actually worthy contender
     even.\u201D"
   - "Rose: \u201CHow? I failed. But I trained so hard for so long..."
-  - "Velvet: \u201CNow now my dear don\u2019t mope. Up onto your feet. You can always
+  - "Velvet: \u201CNow now my dear, don\u2019t mope. Up onto your feet. You can always
     try again later. For now come and take a shower, you\u2019re covered in sweat
     i have no interest in being near.\u201D"
   - "Rose: \u201CYou want me to take a shower with you\u201D"
