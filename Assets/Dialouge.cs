@@ -46,7 +46,6 @@ public class Dialouge : MonoBehaviour
             if(textComponent.text == lines[index]) // when the line shows up
             { 
                 NextLine(); // go to next line
-                
                 ChangeSprite();
             }
             else
@@ -66,9 +65,46 @@ public class Dialouge : MonoBehaviour
     void ChangeSprite()
     {
         sprite.GetComponent<SpriteRenderer>().sprite = charSprites[currentSprite];
-        currentSprite++;
 
-        if (index >= charSprites.Length)
+        if(SceneManager.GetActiveScene().name == "StartDialogue")
+        {
+            if (currentSprite % 2 == 0)
+            {
+                sprite.transform.position = new Vector3(-0.1f, 0.09f);
+                sprite.transform.localScale = new Vector3(1.25f, 1.25f);
+            }
+            else
+            {
+                sprite.transform.position = new Vector3(-0.1f, 0.09f);
+                sprite.transform.localScale = new Vector3(1.25f, 1.25f);
+            }
+
+            if(currentSprite == 8)
+            {
+                sprite.GetComponent<Animator>().enabled = true;
+                sprite.transform.position = new Vector3(-0.1f, 0.09f);
+                sprite.transform.localScale = new Vector3(1.25f, 1.25f);
+            }
+            else if (currentSprite == 9)
+            {
+                sprite.GetComponent<Animator>().enabled = false;
+                gameObject.GetComponent<Animator>().enabled = true;
+                sprite.transform.position = new Vector3(-0.1f, 0.09f);
+                sprite.transform.localScale = new Vector3(1f, 1f);
+            }
+        }
+
+        if (currentSprite <= charSprites.Length - 1)
+        {
+            currentSprite++;
+        }
+        else
+        {
+            gameObject.SetActive(false); // all activity is stopped
+            sceneStop = true; // the scene is stopped
+        }
+
+        if (currentSprite >= charSprites.Length)
         {
             currentSprite = 0;
         }
@@ -85,7 +121,7 @@ public class Dialouge : MonoBehaviour
 
     public void NextLine()
     {
-        if(index < lines.Length - 1) // length of array
+        if (index < lines.Length - 1) // length of array
         {
             index++; // go to next line
             textComponent.text = string.Empty;
@@ -93,8 +129,8 @@ public class Dialouge : MonoBehaviour
         }
         else
         {
+            sceneStop = true;
             gameObject.SetActive(false); // all activity is stopped
-            sceneStop = true; // the scene is stopped
         }
     }
 }
