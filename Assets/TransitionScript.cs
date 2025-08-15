@@ -10,11 +10,13 @@ public class TransitionScript : MonoBehaviour
     //public Animation image;
     public Animator transition;
 
-    public GameObject dialouge; // finds dialouge
+    public GameObject dialogue; // finds dialogue
     
     public float transitionTime;
 
     public Button skipDialogue;
+
+    //public GameObject anim;
     // Update is called once per frame
 
     void Start()
@@ -24,7 +26,7 @@ public class TransitionScript : MonoBehaviour
     }
     void Update()
     {
-        if (dialouge.GetComponent<Dialouge>().sceneStop == true) // finds when scene is stopped
+        if (dialogue.GetComponent<Dialouge>().sceneStop == true) // finds when scene is stopped
         {
             LoadNextLevel(); // loads next scene
         }

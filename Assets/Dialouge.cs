@@ -3,11 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Dialouge : MonoBehaviour
 {
     public TextMeshProUGUI textComponent; // calling text component
+
+    [TextArea(3, 10)]
     public string[] lines; // array of set of lines
+
+    public Sprite[] charSprites;
+    public SpriteRenderer spriteRenderer;
+    public int currentSprite;
+    public GameObject sprite;
+    //public GameObject anim;
+
     public float textSpeed; // how fast the characters set up
 
     private int index; // index of scenes
@@ -17,18 +27,27 @@ public class Dialouge : MonoBehaviour
     void Start()
     {
         textComponent.text = string.Empty; // first it's empty
-        StartDialouge();
+        StartDialogue();
         sceneStop = false;
+        //spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
+        /*
+        if (SceneManager.GetActiveScene().name == "LoseDialogue")
+        {
+            anim.GetComponent<Animation>().Play();
+        }
+        */
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
         {
             if(textComponent.text == lines[index]) // when the line shows up
-            {
+            { 
                 NextLine(); // go to next line
+                
+                ChangeSprite();
             }
             else
             {
@@ -37,11 +56,22 @@ public class Dialouge : MonoBehaviour
             }
         }
     }
-
-    void StartDialouge()
+    
+    void StartDialogue()
     {
         index = 0;
         StartCoroutine(TypeLine());
+    }
+    
+    void ChangeSprite()
+    {
+        sprite.GetComponent<SpriteRenderer>().sprite = charSprites[currentSprite];
+        currentSprite++;
+
+        if (index >= charSprites.Length)
+        {
+            currentSprite = 0;
+        }
     }
 
     IEnumerator TypeLine()
