@@ -384,6 +384,128 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &365633565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365633569}
+  - component: {fileID: 365633568}
+  - component: {fileID: 365633567}
+  - component: {fileID: 365633566}
+  m_Layer: 0
+  m_Name: BlushingAnim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!111 &365633566
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365633565}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: a31385e54543c5b4281d9a98c3d64baf, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!212 &365633567
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365633565}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!95 &365633568
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365633565}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a52539124644a7849af9e1edc4736140, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &365633569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365633565}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1888889, y: -0.270148, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &402049008 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 208244534084835976, guid: a38840ad1a72b304e8a07a0b35d3e2dd, type: 3}
@@ -978,6 +1100,8 @@ GameObject:
   - component: {fileID: 1528765882}
   - component: {fileID: 1528765884}
   - component: {fileID: 1528765885}
+  - component: {fileID: 1528765887}
+  - component: {fileID: 1528765886}
   m_Layer: 5
   m_Name: Dialogue
   m_TagString: Untagged
@@ -1061,26 +1185,27 @@ MonoBehaviour:
     knees, her adversary speaks up.*'
   - "Velvet: \u201CFor a fool you\u2019re pretty strong. An actually worthy contender
     even.\u201D"
-  - "Rose: \u201CHow? I failed. But I trained so hard for so long..."
+  - "Rose: \u201CHow? I failed. But I trained so hard for so long...\""
   - "Velvet: \u201CNow now my dear, don\u2019t mope. Up onto your feet. You can always
     try again later. For now come and take a shower, you\u2019re covered in sweat
-    i have no interest in being near.\u201D"
-  - "Rose: \u201CYou want me to take a shower with you\u201D"
-  - "Velvet: \u201CI wasn\u2019t thinking of that, but if your offering..\u201D"
+    I have no interest in being near.\u201D"
+  - "Rose: \u201CYou want me to take a shower with you?!\u201D"
+  - "Velvet: \u201CI wasn\u2019t thinking of that, but with your offering..\u201D"
   - "Rose: \u201CShut up and get ready for round two.\u201D"
   - "Velvet: \u201COf course darling.\u201D"
   charSprites:
-  - {fileID: 1088134691, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
+  - {fileID: 1777638452, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
   - {fileID: -1187118654, guid: e5c7ae49167226544a7bcce17d800455, type: 3}
   - {fileID: 1088134691, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
   - {fileID: 899422382, guid: e5e9846ff323bea40b54354a80bb90ed, type: 3}
   - {fileID: 1242561453, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
-  - {fileID: 899422382, guid: e5e9846ff323bea40b54354a80bb90ed, type: 3}
+  - {fileID: -448879797, guid: e5e9846ff323bea40b54354a80bb90ed, type: 3}
   - {fileID: 1088134691, guid: 630644c43feab7b41b4449c2e121b0a4, type: 3}
   - {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 1366330580}
   currentSprite: 0
   sprite: {fileID: 1366330579}
+  anim: {fileID: 365633565}
   textSpeed: 0.1
   sceneStop: 0
 --- !u!212 &1528765885
@@ -1135,6 +1260,42 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!111 &1528765886
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528765880}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e7e69c3bfba42bc488e852211ccbed91, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!95 &1528765887
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528765880}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a52539124644a7849af9e1edc4736140, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1890967102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1382,3 +1543,4 @@ SceneRoots:
   - {fileID: 1302871201}
   - {fileID: 1366330581}
   - {fileID: 1389988521}
+  - {fileID: 365633569}

@@ -16,7 +16,7 @@ public class Dialouge : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public int currentSprite;
     public GameObject sprite;
-    //public GameObject anim;
+    public GameObject anim;
 
     public float textSpeed; // how fast the characters set up
 
@@ -94,6 +94,15 @@ public class Dialouge : MonoBehaviour
             }
         }
 
+        if(SceneManager.GetActiveScene().name == "WinDialogue" || SceneManager.GetActiveScene().name == "LoseDialogue")
+        {
+            if(currentSprite == 7)
+            {
+                gameObject.GetComponent<Animator>().enabled = true;
+                gameObject.GetComponent<Animation>().Play();
+            }
+        }
+
         if (currentSprite <= charSprites.Length - 1)
         {
             currentSprite++;
@@ -132,5 +141,13 @@ public class Dialouge : MonoBehaviour
             sceneStop = true;
             gameObject.SetActive(false); // all activity is stopped
         }
+    }
+
+    public void StopDialogue()
+    {
+        textComponent.text = lines[11];
+        anim.GetComponent<Animator>().enabled = true;
+        anim.GetComponent<Animation>().Play();
+        gameObject.SetActive(false);
     }
 }
